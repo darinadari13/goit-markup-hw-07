@@ -9,15 +9,16 @@
     color: getColor('main-color');
     margin-bottom: 50px;
   }
-  &__technology-list {
+  &__list {
     display: flex;
     gap: 30px;
-    &__label {
+  }
+  &__label {
       position: relative;
-    }
-    &__paragraph {
-      content: '';
-      position: absolute;
+  }
+  &__paragraph {
+    content: '';
+    position: absolute;
       width: 370px;
       height: 70px;
       background: rgba(47, 48, 58, 0.8);
@@ -32,6 +33,6 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
     }
-  }
+  
 }
 

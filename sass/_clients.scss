@@ -1,4 +1,4 @@
-.our-clients {
+.clients {
   display: flex;
   column-gap: 30px;
   padding-top: 94px;
@@ -27,23 +27,25 @@
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-.our-clients__icon {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-clients__link {
+  &__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
-
-.our-clients__link:focus, .our-clients__link:hover {
-  &.our-clients__item {
+  &:focus,
+  &:hover {
+     &.clients__item {
     border: 1px solid getColor('second-color');
 
-    & > .our-clients__icon {
+    & > .clients__icon {
       fill: getColor('second-color');
     }
   }
+  }
+} 
 }
+
+
+
+

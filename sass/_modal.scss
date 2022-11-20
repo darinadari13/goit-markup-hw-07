@@ -79,7 +79,20 @@
     border-radius: 4px;
     border: 0 solid transparent;
   }
+  &__input-check:checked + .modal__check-text span {
+  background-color: getColor('second-color');
+  border: transparent;
+  fill: getColor('white-color');
 }
+  &__input-check:focus + .modal__check-text span {
+  border-color: getColor('accent-color');
+}
+
+  &__close-svg:hover {
+  fill: getColor('second-color');
+}
+}
+
 
 .modal__close-btn {
   position: absolute;
@@ -99,9 +112,9 @@
   }
 }
 
-.modal__close-svg:hover {
-  fill: getColor('second-color');
-}
+// .modal__close-svg:hover {
+//   fill: getColor('second-color');
+// }
 
 .modal__form-input {
   width: 100%;
@@ -118,11 +131,14 @@
   &:focus {
     border-color: getColor('second-color');
   }
+  &:focus + .modal__input-icon {
+    fill: getColor('second-color');
+  }
 }
 
-.modal__form-input:focus + .modal__input-icon {
-  fill: getColor('second-color');
-}
+// .modal__form-input:focus + .modal__input-icon {
+//   fill: getColor('second-color');
+// }
 
 .modal__input-icon {
   position: absolute;
@@ -160,15 +176,15 @@
   margin-top: 20px;
 }
 
-.modal__input-check:checked + .modal__check-text span {
-  background-color: getColor('second-color');
-  border: transparent;
-  fill: getColor('white-color');
-}
+// .modal__input-check:checked + .modal__check-text span {
+//   background-color: getColor('second-color');
+//   border: transparent;
+//   fill: getColor('white-color');
+// }
 
-.modal__input-check:focus + .modal__check-text span {
-  border-color: getColor('accent-color');
-}
+// __input-check:focus + .modal__check-text span {
+//   border-color: getColor('accent-color');
+// }
 
 .modal__check-text {
   display: flex;
